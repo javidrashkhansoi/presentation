@@ -170,6 +170,7 @@ body.lock {
 .start__link {
   margin: auto;
   padding: 15px;
+  cursor: pointer;
 }
 .start__image-ibg {
   width: 237px;
@@ -219,6 +220,7 @@ body.lock {
 }
 .preview__image-ibg {
   padding-bottom: calc(var(--preview-image-height, 316) / var(--preview-image-width, 566) * 100%);
+  cursor: pointer;
 }
 
 .close {
