@@ -285,14 +285,19 @@ body.lock {
   z-index: 2;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(var(--image-link-count, 4), var(--image-link-width, 473px));
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-auto-rows: 1fr;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  max-width: fit-content;
-  margin: 0 auto;
   background-color: #ffffff;
+}
+@media (min-width: 1920px) {
+  .room__links_center {
+    grid-template-columns: repeat(var(--image-link-count, 3), var(--image-link-width, 473px));
+    max-width: fit-content;
+    margin: 0 auto;
+  }
 }
 .room__link {
   margin: auto;
@@ -303,7 +308,6 @@ body.lock {
   display: grid;
   grid-template-rows: 1fr auto;
   width: 100%;
-  max-width: 473px;
   height: 100%;
   padding: 0 0 20px 0;
   cursor: pointer;
@@ -353,7 +357,7 @@ body.lock {
 .link-room__text {
   position: relative;
   z-index: 1;
-  font-size: 20px;
+  font-size: var(--font-size, 20px);
   line-height: 1.2;
   text-align: center;
 }

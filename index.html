@@ -10,8 +10,8 @@
   <title>Презентация</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Inter:wght@700&display=swap&_v=20220923035827" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220923035827">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Inter:wght@700&display=swap&_v=20220923061032" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220923061032">
   <link rel="shortcut icon" href="data:,">
 </head>
 
@@ -50,13 +50,13 @@
     </div>
     <div class="start__text">Прочие помещения</div>
   </div>
-  <div class="start__link">
+  <div data-target="room-51" class="start__link">
     <div class="start__image-ibg">
       <img src="img/images/home/start/5.gif" alt="Start link icon" width="237" height="237">
     </div>
     <div class="start__text">Административная группа помещений</div>
   </div>
-  <div class="start__link">
+  <div data-target="room-61" class="start__link">
     <div class="start__image-ibg">
       <img src="img/images/home/start/6.gif" alt="Start link icon" width="237" height="237">
     </div>
@@ -148,13 +148,13 @@
 
   <div class="preview__title">Прочие помещения</div>
   <div class="preview__links">
-    <div class="preview__image-ibg">
+    <div data-target="room-41" class="preview__image-ibg">
       <img src="img/images/home/preview/4/1.png" alt="Preview link image" width="566" height="316">
     </div>
-    <div class="preview__image-ibg">
+    <div data-target="room-42" class="preview__image-ibg">
       <img src="img/images/home/preview/4/2.png" alt="Preview link image" width="566" height="316">
     </div>
-    <div class="preview__image-ibg">
+    <div data-target="room-43" class="preview__image-ibg">
       <img src="img/images/home/preview/4/3.png" alt="Preview link image" width="566" height="316">
     </div>
   </div>
@@ -171,19 +171,19 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/11/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/11/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-111" class="room__image-ibg">
-        <img src="img/images/home/room/11/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/11/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-112" class="room__image-ibg">
-        <img src="img/images/home/room/11/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/11/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-113" class="room__image-ibg">
-        <img src="img/images/home/room/11/4.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/11/4.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-114" class="room__image-ibg">
-        <img src="img/images/home/room/11/5.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/11/5.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
     <div class="room__links">
@@ -245,28 +245,34 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/12/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/12/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-121" class="room__image-ibg">
-        <img src="img/images/home/room/12/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/12/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-122" class="room__image-ibg">
-        <img src="img/images/home/room/12/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/12/3.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 2;">
+    <div class="room__links room__links_center" style="--image-link-count: 2;">
       <div data-target="image-121" class="room__link link-room">
         <div class="link-room__images">
-          <div class="link-room__image-ibg">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
             <img src="img/images/home/lights/12/1.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/12/3.png" alt="Room light" width="264" height="272">
           </div>
         </div>
         <div class="link-room__text">Встраиваемый светодиодный <br>светильник Solar DL-010</div>
       </div>
       <div data-target="image-122" class="room__link link-room">
         <div class="link-room__images">
-          <div class="link-room__image-ibg">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
             <img src="img/images/home/lights/12/2.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/12/4.png" alt="Room light" width="264" height="272">
           </div>
         </div>
         <div class="link-room__text">Линейный светодиодный светильник <br>Const P OFL-5771</div>
@@ -285,42 +291,51 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/13/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/13/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-131" class="room__image-ibg">
-        <img src="img/images/home/room/13/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/13/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-132" class="room__image-ibg">
-        <img src="img/images/home/room/13/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/13/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-133" class="room__image-ibg">
-        <img src="img/images/home/room/13/4.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/13/4.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 3;">
+    <div class="room__links room__links_center" style="--font-size: 16px;">
       <div data-target="image-131" class="room__link link-room">
         <div class="link-room__images">
-          <div class="link-room__image-ibg">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
             <img src="img/images/home/lights/13/1.png" alt="Room light" width="264" height="272">
           </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/13/4.png" alt="Room light" width="264" height="272">
+          </div>
         </div>
-        <div class="link-room__text">Линейный светодиодный <br>светильник Mercury</div>
+        <div class="link-room__text">Накладной светодиодный <br>светильник SDL</div>
       </div>
       <div data-target="image-132" class="room__link link-room">
         <div class="link-room__images">
-          <div class="link-room__image-ibg">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
             <img src="img/images/home/lights/13/2.png" alt="Room light" width="264" height="272">
           </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/13/5.png" alt="Room light" width="264" height="272">
+          </div>
         </div>
-        <div class="link-room__text">Линейный светодиодный <br>светильник Optima OFL-5050D</div>
+        <div class="link-room__text">Пылевлагозащищенный светодиодный <br>светильник Universal OFL-0054</div>
       </div>
       <div data-target="image-133" class="room__link link-room">
         <div class="link-room__images">
-          <div class="link-room__image-ibg">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
             <img src="img/images/home/lights/13/3.png" alt="Room light" width="264" height="272">
           </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/13/6.png" alt="Room light" width="264" height="272">
+          </div>
         </div>
-        <div class="link-room__text">Линейный светодиодный <br>светильник Optima OFL-5771</div>
+        <div class="link-room__text">Встраиваемый светодиодный <br>светильник Light box</div>
       </div>
     </div>
   </div>
@@ -336,19 +351,19 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/21/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/21/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-211" class="room__image-ibg">
-        <img src="img/images/home/room/21/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/21/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-212" class="room__image-ibg">
-        <img src="img/images/home/room/21/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/21/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-213" class="room__image-ibg">
-        <img src="img/images/home/room/21/4.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/21/4.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 3;">
+    <div class="room__links room__links_center">
       <div data-target="image-211" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -396,28 +411,28 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/22/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/22/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-221" class="room__image-ibg">
-        <img src="img/images/home/room/22/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/22/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-222" class="room__image-ibg">
-        <img src="img/images/home/room/22/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/22/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-223" class="room__image-ibg">
-        <img src="img/images/home/room/22/4.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/22/4.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-224" class="room__image-ibg">
-        <img src="img/images/home/room/22/5.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/22/5.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-225" class="room__image-ibg">
-        <img src="img/images/home/room/22/6.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/22/6.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-226" class="room__image-ibg">
-        <img src="img/images/home/room/22/7.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/22/7.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 6; --image-link-width: 309px">
+    <div class="room__links">
       <div data-target="image-221" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -498,19 +513,19 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/23/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/23/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-231" class="room__image-ibg">
-        <img src="img/images/home/room/23/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/23/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-232" class="room__image-ibg">
-        <img src="img/images/home/room/23/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/23/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-233" class="room__image-ibg">
-        <img src="img/images/home/room/23/4.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/23/4.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 3;">
+    <div class="room__links room__links_center">
       <div data-target="image-231" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -558,19 +573,19 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/24/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/24/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-241" class="room__image-ibg">
-        <img src="img/images/home/room/24/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/24/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-242" class="room__image-ibg">
-        <img src="img/images/home/room/24/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/24/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-243" class="room__image-ibg">
-        <img src="img/images/home/room/24/4.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/24/4.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-244" class="room__image-ibg">
-        <img src="img/images/home/room/24/5.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/24/5.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
     <div class="room__links">
@@ -632,16 +647,16 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/31/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/31/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-311" class="room__image-ibg">
-        <img src="img/images/home/room/31/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/31/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-312" class="room__image-ibg">
-        <img src="img/images/home/room/31/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/31/3.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 2;">
+    <div class="room__links room__links_center" style="--image-link-count: 2;">
       <div data-target="image-311" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -678,28 +693,28 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/32/1.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/32/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-321" class="room__image-ibg">
-        <img src="img/images/home/room/32/2.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/32/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-322" class="room__image-ibg">
-        <img src="img/images/home/room/32/3.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/32/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-323" class="room__image-ibg">
-        <img src="img/images/home/room/32/4.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/32/4.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-324" class="room__image-ibg">
-        <img src="img/images/home/room/32/5.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/32/5.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-325" class="room__image-ibg">
-        <img src="img/images/home/room/32/6.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/32/6.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-326" class="room__image-ibg">
-        <img src="img/images/home/room/32/7.png" alt="Room image" width="1932" height="1080">
+        <img src="img/images/home/room/32/7.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 6; --image-link-width: 309px">
+    <div class="room__links">
       <div data-target="image-321" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -780,19 +795,19 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/33/1.png" alt="Room image" width="1933" height="1080">
+        <img src="img/images/home/room/33/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-331" class="room__image-ibg">
-        <img src="img/images/home/room/33/2.png" alt="Room image" width="1933" height="1080">
+        <img src="img/images/home/room/33/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-332" class="room__image-ibg">
-        <img src="img/images/home/room/33/3.png" alt="Room image" width="1933" height="1080">
+        <img src="img/images/home/room/33/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-333" class="room__image-ibg">
-        <img src="img/images/home/room/33/4.png" alt="Room image" width="1933" height="1080">
+        <img src="img/images/home/room/33/4.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 3;">
+    <div class="room__links room__links_center">
       <div data-target="image-331" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -840,19 +855,19 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/34/1.jpg" alt="Room image" width="1934" height="1080">
+        <img src="img/images/home/room/34/1.jpg" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-341" class="room__image-ibg">
-        <img src="img/images/home/room/34/2.png" alt="Room image" width="1934" height="1080">
+        <img src="img/images/home/room/34/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-342" class="room__image-ibg">
-        <img src="img/images/home/room/34/3.png" alt="Room image" width="1934" height="1080">
+        <img src="img/images/home/room/34/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-343" class="room__image-ibg">
-        <img src="img/images/home/room/34/4.png" alt="Room image" width="1934" height="1080">
+        <img src="img/images/home/room/34/4.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 3;">
+    <div class="room__links room__links_center">
       <div data-target="image-341" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -900,28 +915,28 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/35/1.png" alt="Room image" width="1935" height="1080">
+        <img src="img/images/home/room/35/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-351" class="room__image-ibg">
-        <img src="img/images/home/room/35/2.png" alt="Room image" width="1935" height="1080">
+        <img src="img/images/home/room/35/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-352" class="room__image-ibg">
-        <img src="img/images/home/room/35/3.png" alt="Room image" width="1935" height="1080">
+        <img src="img/images/home/room/35/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-353" class="room__image-ibg">
-        <img src="img/images/home/room/35/4.png" alt="Room image" width="1935" height="1080">
+        <img src="img/images/home/room/35/4.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-354" class="room__image-ibg">
-        <img src="img/images/home/room/35/5.png" alt="Room image" width="1935" height="1080">
+        <img src="img/images/home/room/35/5.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-355" class="room__image-ibg">
-        <img src="img/images/home/room/35/6.png" alt="Room image" width="1935" height="1080">
+        <img src="img/images/home/room/35/6.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-356" class="room__image-ibg">
-        <img src="img/images/home/room/35/7.png" alt="Room image" width="1935" height="1080">
+        <img src="img/images/home/room/35/7.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 6; --image-link-width: 309px">
+    <div class="room__links">
       <div data-target="image-351" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -1002,19 +1017,19 @@
   <div class="room__inner">
     <div class="room__images">
       <div class="room__background-image-ibg">
-        <img src="img/images/home/room/36/1.png" alt="Room image" width="1936" height="1080">
+        <img src="img/images/home/room/36/1.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-361" class="room__image-ibg">
-        <img src="img/images/home/room/36/2.png" alt="Room image" width="1936" height="1080">
+        <img src="img/images/home/room/36/2.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-362" class="room__image-ibg">
-        <img src="img/images/home/room/36/3.png" alt="Room image" width="1936" height="1080">
+        <img src="img/images/home/room/36/3.png" alt="Room image" width="1920" height="1080">
       </div>
       <div id="image-363" class="room__image-ibg">
-        <img src="img/images/home/room/36/4.png" alt="Room image" width="1936" height="1080">
+        <img src="img/images/home/room/36/4.png" alt="Room image" width="1920" height="1080">
       </div>
     </div>
-    <div class="room__links" style="--image-link-count: 3;">
+    <div class="room__links room__links_center">
       <div data-target="image-361" class="room__link link-room">
         <div class="link-room__images">
           <div class="link-room__image-ibg link-room__image-ibg_off">
@@ -1052,11 +1067,377 @@
   </div>
 </article>
 
+<article id="room-41" class="room">
+  <div class="close">
+  <svg width="12" height="19">
+    <use xlink:href="#arrow"></use>
+  </svg>
+</div>
+
+  <div class="room__inner">
+    <div class="room__images">
+      <div class="room__background-image-ibg">
+        <img src="img/images/home/room/41/1.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-411" class="room__image-ibg">
+        <img src="img/images/home/room/41/2.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-412" class="room__image-ibg">
+        <img src="img/images/home/room/41/3.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-413" class="room__image-ibg">
+        <img src="img/images/home/room/41/4.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-414" class="room__image-ibg">
+        <img src="img/images/home/room/41/5.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-415" class="room__image-ibg">
+        <img src="img/images/home/room/41/6.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-416" class="room__image-ibg">
+        <img src="img/images/home/room/41/7.png" alt="Room image" width="1920" height="1080">
+      </div>
+    </div>
+    <div class="room__links">
+      <div data-target="image-411" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/41/1.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/41/7.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Дизайнерский cветодиодный <br>светильник WAVE OFL</div>
+      </div>
+      <div data-target="image-412" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/41/2.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/41/8.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Дизайнерский cветодиодный <br>светильник Infinity</div>
+      </div>
+      <div data-target="image-413" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/41/3.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/41/9.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Mercury</div>
+      </div>
+      <div data-target="image-414" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/41/4.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/41/10.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Optima OFL-5050D</div>
+      </div>
+      <div data-target="image-415" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/41/5.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/41/11.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Optima OFL-5771</div>
+      </div>
+      <div data-target="image-416" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/41/6.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/41/12.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Optima UGR</div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article id="room-42" class="room">
+  <div class="close">
+  <svg width="12" height="19">
+    <use xlink:href="#arrow"></use>
+  </svg>
+</div>
+
+  <div class="room__inner">
+    <div class="room__images">
+      <div class="room__background-image-ibg">
+        <img src="img/images/home/room/42/1.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-421" class="room__image-ibg">
+        <img src="img/images/home/room/42/2.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-422" class="room__image-ibg">
+        <img src="img/images/home/room/42/3.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-423" class="room__image-ibg">
+        <img src="img/images/home/room/42/4.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-424" class="room__image-ibg">
+        <img src="img/images/home/room/42/5.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-425" class="room__image-ibg">
+        <img src="img/images/home/room/42/6.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-426" class="room__image-ibg">
+        <img src="img/images/home/room/42/7.png" alt="Room image" width="1920" height="1080">
+      </div>
+    </div>
+    <div class="room__links">
+      <div data-target="image-421" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/42/1.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/42/7.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Дизайнерский cветодиодный <br>светильник WAVE OFL</div>
+      </div>
+      <div data-target="image-422" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/42/2.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/42/8.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Дизайнерский cветодиодный <br>светильник Infinity</div>
+      </div>
+      <div data-target="image-423" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/42/3.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/42/9.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Mercury</div>
+      </div>
+      <div data-target="image-424" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/42/4.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/42/10.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Optima OFL-5050D</div>
+      </div>
+      <div data-target="image-425" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/42/5.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/42/11.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Optima OFL-5771</div>
+      </div>
+      <div data-target="image-426" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/42/6.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/42/12.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Optima UGR</div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article id="room-43" class="room">
+  <div class="close">
+  <svg width="12" height="19">
+    <use xlink:href="#arrow"></use>
+  </svg>
+</div>
+
+  <div class="room__inner">
+    <div class="room__images">
+      <div class="room__background-image-ibg">
+        <img src="img/images/home/room/43/1.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-431" class="room__image-ibg">
+        <img src="img/images/home/room/43/2.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-432" class="room__image-ibg">
+        <img src="img/images/home/room/43/3.png" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-433" class="room__image-ibg">
+        <img src="img/images/home/room/43/4.png" alt="Room image" width="1920" height="1080">
+      </div>
+    </div>
+    <div class="room__links room__links_center">
+      <div data-target="image-431" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/43/1.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/43/4.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Встраиваемый светодиодный <br>светильник Solar DL-010</div>
+      </div>
+      <div data-target="image-432" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/43/2.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/43/5.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Пылевлагозащищенный светодиодный <br>светильник Grilyato OFRL-54</div>
+      </div>
+      <div data-target="image-433" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/43/3.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/43/6.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Накладной светодиодный <br>светильник SDL</div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article id="room-51" class="room">
+  <div class="close">
+  <svg width="12" height="19">
+    <use xlink:href="#arrow"></use>
+  </svg>
+</div>
+
+  <div class="room__inner">
+    <div class="room__images">
+      <div class="room__background-image-ibg">
+        <img src="img/images/home/room/51/1.jpg" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-511" class="room__image-ibg">
+        <img src="img/images/home/room/51/2.jpg" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-512" class="room__image-ibg">
+        <img src="img/images/home/room/51/3.jpg" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-513" class="room__image-ibg">
+        <img src="img/images/home/room/51/4.jpg" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-514" class="room__image-ibg">
+        <img src="img/images/home/room/51/5.jpg" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-515" class="room__image-ibg">
+        <img src="img/images/home/room/51/6.jpg" alt="Room image" width="1920" height="1080">
+      </div>
+      <div id="image-516" class="room__image-ibg">
+        <img src="img/images/home/room/51/7.jpg" alt="Room image" width="1920" height="1080">
+      </div>
+    </div>
+    <div class="room__links" style="--font-size: 16px">
+      <div data-target="image-511" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/51/1.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/51/7.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Линейный светодиодный <br>светильник Optima OFL-5771</div>
+      </div>
+      <div data-target="image-512" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/51/2.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/51/8.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Встраиваемый светодиодный <br>светильник Solar DL-010</div>
+      </div>
+      <div data-target="image-513" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/51/3.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/51/9.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Дизайнерский светодиодный <br>светильник Nova OFL</div>
+      </div>
+      <div data-target="image-514" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/51/4.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/51/10.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Дизайнерский cветодиодный <br>светильник Harmony OFL</div>
+      </div>
+      <div data-target="image-515" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/51/5.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/51/11.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Дизайнерский светодиодный <br>светильник iNova slim</div>
+      </div>
+      <div data-target="image-516" class="room__link link-room">
+        <div class="link-room__images">
+          <div class="link-room__image-ibg link-room__image-ibg_off">
+            <img src="img/images/home/lights/51/6.png" alt="Room light" width="264" height="272">
+          </div>
+          <div class="link-room__image-ibg link-room__image-ibg_on">
+            <img src="img/images/home/lights/51/12.png" alt="Room light" width="264" height="272">
+          </div>
+        </div>
+        <div class="link-room__text">Пылевлагозащищенный светодиодный <br>светильник Universal OFL-0054</div>
+      </div>
+    </div>
+  </div>
+</article>
+
 
 
     </main>
   </div>
-  <script src="js/script.min.js?_v=20220923035827"></script>
+  <script src="js/script.min.js?_v=20220923061032"></script>
 </body>
 
 </html>
