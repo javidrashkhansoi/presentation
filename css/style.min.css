@@ -300,7 +300,7 @@ body.lock {
   object-position: 50% 0;
 }
 .room__background-image-ibg_obp-y-100 img {
-  object-position: 50% 100%;
+  object-position: 50% 75%;
 }
 .room__image-ibg {
   z-index: 1;
